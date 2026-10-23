@@ -9,7 +9,9 @@
   <!-- Typography Optimization -->
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
   <!-- Global System Stylesheet -->
   <link rel="stylesheet" href="../CSS/AI.css">
 </head>
@@ -135,7 +137,8 @@
     <!-- Content Narrative Component Grid -->
     <section class="story-section" id="story">
       <div class="story-image">
-        <img src="https://t4.ftcdn.net/jpg/05/21/81/47/360_F_521814750_9SqL5d9VBLUQt2l1tgEsx5BApUIcp6L8.jpg" alt="Children sharing a moment together" loading="lazy">
+        <img src="https://t4.ftcdn.net/jpg/05/21/81/47/360_F_521814750_9SqL5d9VBLUQt2l1tgEsx5BApUIcp6L8.jpg"
+          alt="Children sharing a moment together" loading="lazy">
         <div class="image-caption">
           <span class="caption-star">✦</span>
           <span>HOPE BEGINS WITH CARE</span>
@@ -172,7 +175,8 @@
       <p class="eyebrow dark-eyebrow">BE PART OF THEIR JOURNEY</p>
       <h2>Hope grows when <em>we care together.</em></h2>
       <p>Discover how your time, skills, and support can help create meaningful opportunities for children.</p>
-      <a href="mailto:info@example.org" class="mission-button">Connect With Our Team <span class="btn-arrow">↗</span></a>
+      <a href="mailto:info@example.org" class="mission-button">Connect With Our Team <span
+          class="btn-arrow">↗</span></a>
       <p class="contact-note">Replace this example email with the orphanage's official contact address.</p>
     </section>
   </main>
@@ -189,15 +193,15 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const heading = document.querySelector('.pop-name');
-      
+
       if (heading) {
         const text = heading.textContent.trim();
-        heading.innerHTML = ''; 
+        heading.innerHTML = '';
 
         // Dynamic 12 Grade Matrix for perfect palette balance distribution
         const goldGradients = [
-          'gold-24k', 'gold-champagne', 'gold-sunkissed', 'gold-rose', 
-          'gold-sequin', 'gold-antique', 'gold-stardust', 'gold-vegas', 
+          'gold-24k', 'gold-champagne', 'gold-sunkissed', 'gold-rose',
+          'gold-sequin', 'gold-antique', 'gold-stardust', 'gold-vegas',
           'gold-aztec', 'gold-white', 'gold-celestial', 'gold-majestic'
         ];
 
@@ -205,7 +209,7 @@
 
         [...text].forEach((char, index) => {
           const span = document.createElement('span');
-          
+
           if (char === ' ') {
             span.className = 'space';
           } else {
@@ -213,16 +217,17 @@
             const colorClass = goldGradients[colorCounter % goldGradients.length];
             span.className = `letter ${colorClass}`;
             span.textContent = char;
-            
+
             // Sequential 100ms offset distribution matrix tracking
             span.style.animationDelay = `${index * 0.08}s`;
             colorCounter++;
           }
-          
+
           heading.appendChild(span);
         });
       }
     });
   </script>
 </body>
+
 </html>
